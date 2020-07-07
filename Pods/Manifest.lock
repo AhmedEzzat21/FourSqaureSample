@@ -1,3 +1,44 @@
-PODFILE CHECKSUM: 9a24135537a39ec218de0aee27f6f58b6b6f45ae
+PODS:
+  - Alamofire (4.7.3)
+  - Bond (7.6.6):
+    - Differ (~> 1.4)
+    - ReactiveKit (~> 3.14)
+  - Differ (1.4.5)
+  - JGProgressHUD (2.0.4)
+  - PromisesObjC (1.2.9)
+  - PromisesSwift (1.2.9):
+    - PromisesObjC (= 1.2.9)
+  - ReactiveKit (3.17.1)
+  - SwiftyJSON (4.3.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.7.3)
+  - Bond (~> 7.6.0)
+  - JGProgressHUD (~> 2.0.3)
+  - PromisesSwift (~> 1.2.3)
+  - SwiftyJSON (~> 4.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Bond
+    - Differ
+    - JGProgressHUD
+    - PromisesObjC
+    - PromisesSwift
+    - ReactiveKit
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  Bond: 9e7d901cf4ed825b6004a93dd0a7f1c7479e2834
+  Differ: 3b6bd78e2b20cc795d9a86f7641d087524e4273e
+  JGProgressHUD: 62658b14e72cccf179efc7a13bcb54d30b92fc22
+  PromisesObjC: b48e0338dbbac2207e611750777895f7a5811b75
+  PromisesSwift: 991ad88e9851c45410d6697d1fe5df88fd3deb08
+  ReactiveKit: f578a74d3555296ea61fab228f5245a4ed7b4b27
+  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
+
+PODFILE CHECKSUM: 878c68d240ae1d679cb3341c6729905e45e5110d
 
 COCOAPODS: 1.8.4

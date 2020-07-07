@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -48,7 +48,6 @@
 				D038568465554AFC92C86C37 /* Pods-FourSqaureSample.debug.xcconfig */,
 				7B241B1E68217A53C8D22657 /* Pods-FourSqaureSample.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -56,6 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				A318AEB924B53C6E0062697F /* FourSqaureSample */,
+				A3B0E13124B53D8400A8881C /* New Group */,
 				A318AEB824B53C6E0062697F /* Products */,
 				3DD6A643D5879506AE644DEA /* Pods */,
 				FE9D312581EEA4C7AAC53134 /* Frameworks */,
@@ -84,6 +84,13 @@
 			path = FourSqaureSample;
 			sourceTree = "<group>";
 		};
+		A3B0E13124B53D8400A8881C /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		FE9D312581EEA4C7AAC53134 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +110,7 @@
 				A318AEB324B53C6E0062697F /* Sources */,
 				A318AEB424B53C6E0062697F /* Frameworks */,
 				A318AEB524B53C6E0062697F /* Resources */,
+				0356FB73F59DC1961C2492FD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -160,6 +168,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0356FB73F59DC1961C2492FD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FourSqaureSample/Pods-FourSqaureSample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FourSqaureSample/Pods-FourSqaureSample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FourSqaureSample/Pods-FourSqaureSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		E7118FA7422856025DC05F4B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
