@@ -13,6 +13,19 @@
 		A318AEC224B53C6E0062697F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A318AEC024B53C6E0062697F /* Main.storyboard */; };
 		A318AEC424B53C6E0062697F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A318AEC324B53C6E0062697F /* Assets.xcassets */; };
 		A318AEC724B53C6E0062697F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A318AEC524B53C6E0062697F /* LaunchScreen.storyboard */; };
+		A3B0E13324B53E0700A8881C /* BaseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B0E13224B53E0700A8881C /* BaseItem.swift */; };
+		A3B0E13524B53E2100A8881C /* BaseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B0E13424B53E2100A8881C /* BaseError.swift */; };
+		A3B0E13724B53E3800A8881C /* BaseValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B0E13624B53E3800A8881C /* BaseValidator.swift */; };
+		A3B0E13924B53E5100A8881C /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B0E13824B53E5100A8881C /* BasePresenter.swift */; };
+		A3B0E13B24B53E6300A8881C /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B0E13A24B53E6300A8881C /* BaseView.swift */; };
+		A3B0E13D24B53E9100A8881C /* NetworkProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B0E13C24B53E9100A8881C /* NetworkProcessor.swift */; };
+		A3B0E14024B53ECE00A8881C /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B0E13F24B53ECE00A8881C /* String.swift */; };
+		A3B0E14224B53EDF00A8881C /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B0E14124B53EDF00A8881C /* NetworkService.swift */; };
+		A3B0E14424B53EF400A8881C /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B0E14324B53EF400A8881C /* Dynamic.swift */; };
+		A3B0E14624B53F0D00A8881C /* Date+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B0E14524B53F0D00A8881C /* Date+Helpers.swift */; };
+		A3B0E14824B53F1F00A8881C /* Codable+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B0E14724B53F1F00A8881C /* Codable+Helpers.swift */; };
+		A3B0E14A24B53F3100A8881C /* AuthorizationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B0E14924B53F3100A8881C /* AuthorizationHandler.swift */; };
+		A3B0E14C24B53F4800A8881C /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B0E14B24B53F4800A8881C /* Endpoint.swift */; };
 		C6F743A3C7838DE89B69B7CB /* Pods_FourSqaureSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5515DA2A530EBECDFB76215E /* Pods_FourSqaureSample.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +40,19 @@
 		A318AEC324B53C6E0062697F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A318AEC624B53C6E0062697F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A318AEC824B53C6E0062697F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3B0E13224B53E0700A8881C /* BaseItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseItem.swift; sourceTree = "<group>"; };
+		A3B0E13424B53E2100A8881C /* BaseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseError.swift; sourceTree = "<group>"; };
+		A3B0E13624B53E3800A8881C /* BaseValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseValidator.swift; sourceTree = "<group>"; };
+		A3B0E13824B53E5100A8881C /* BasePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
+		A3B0E13A24B53E6300A8881C /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		A3B0E13C24B53E9100A8881C /* NetworkProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProcessor.swift; sourceTree = "<group>"; };
+		A3B0E13F24B53ECE00A8881C /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		A3B0E14124B53EDF00A8881C /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		A3B0E14324B53EF400A8881C /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
+		A3B0E14524B53F0D00A8881C /* Date+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Helpers.swift"; sourceTree = "<group>"; };
+		A3B0E14724B53F1F00A8881C /* Codable+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Codable+Helpers.swift"; sourceTree = "<group>"; };
+		A3B0E14924B53F3100A8881C /* AuthorizationHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationHandler.swift; sourceTree = "<group>"; };
+		A3B0E14B24B53F4800A8881C /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		D038568465554AFC92C86C37 /* Pods-FourSqaureSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FourSqaureSample.debug.xcconfig"; path = "Target Support Files/Pods-FourSqaureSample/Pods-FourSqaureSample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -55,7 +81,8 @@
 			isa = PBXGroup;
 			children = (
 				A318AEB924B53C6E0062697F /* FourSqaureSample */,
-				A3B0E13124B53D8400A8881C /* New Group */,
+				A3B0E13E24B53EA700A8881C /* Helpers */,
+				A3B0E13124B53D8400A8881C /* Base */,
 				A318AEB824B53C6E0062697F /* Products */,
 				3DD6A643D5879506AE644DEA /* Pods */,
 				FE9D312581EEA4C7AAC53134 /* Frameworks */,
@@ -84,11 +111,31 @@
 			path = FourSqaureSample;
 			sourceTree = "<group>";
 		};
-		A3B0E13124B53D8400A8881C /* New Group */ = {
+		A3B0E13124B53D8400A8881C /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				A3B0E13224B53E0700A8881C /* BaseItem.swift */,
+				A3B0E13424B53E2100A8881C /* BaseError.swift */,
+				A3B0E13624B53E3800A8881C /* BaseValidator.swift */,
+				A3B0E13824B53E5100A8881C /* BasePresenter.swift */,
+				A3B0E13A24B53E6300A8881C /* BaseView.swift */,
+				A3B0E13C24B53E9100A8881C /* NetworkProcessor.swift */,
 			);
-			path = "New Group";
+			path = Base;
+			sourceTree = "<group>";
+		};
+		A3B0E13E24B53EA700A8881C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A3B0E13F24B53ECE00A8881C /* String.swift */,
+				A3B0E14124B53EDF00A8881C /* NetworkService.swift */,
+				A3B0E14324B53EF400A8881C /* Dynamic.swift */,
+				A3B0E14524B53F0D00A8881C /* Date+Helpers.swift */,
+				A3B0E14724B53F1F00A8881C /* Codable+Helpers.swift */,
+				A3B0E14924B53F3100A8881C /* AuthorizationHandler.swift */,
+				A3B0E14B24B53F4800A8881C /* Endpoint.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		FE9D312581EEA4C7AAC53134 /* Frameworks */ = {
@@ -214,9 +261,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3B0E14224B53EDF00A8881C /* NetworkService.swift in Sources */,
+				A3B0E13D24B53E9100A8881C /* NetworkProcessor.swift in Sources */,
 				A318AEBF24B53C6E0062697F /* ViewController.swift in Sources */,
+				A3B0E14024B53ECE00A8881C /* String.swift in Sources */,
+				A3B0E13924B53E5100A8881C /* BasePresenter.swift in Sources */,
+				A3B0E14A24B53F3100A8881C /* AuthorizationHandler.swift in Sources */,
 				A318AEBB24B53C6E0062697F /* AppDelegate.swift in Sources */,
+				A3B0E14624B53F0D00A8881C /* Date+Helpers.swift in Sources */,
 				A318AEBD24B53C6E0062697F /* SceneDelegate.swift in Sources */,
+				A3B0E14824B53F1F00A8881C /* Codable+Helpers.swift in Sources */,
+				A3B0E14C24B53F4800A8881C /* Endpoint.swift in Sources */,
+				A3B0E13724B53E3800A8881C /* BaseValidator.swift in Sources */,
+				A3B0E13324B53E0700A8881C /* BaseItem.swift in Sources */,
+				A3B0E14424B53EF400A8881C /* Dynamic.swift in Sources */,
+				A3B0E13524B53E2100A8881C /* BaseError.swift in Sources */,
+				A3B0E13B24B53E6300A8881C /* BaseView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,7 +422,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J2K8QX5BJD;
+				DEVELOPMENT_TEAM = C8JF9RQ56X;
 				INFOPLIST_FILE = FourSqaureSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -381,7 +441,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J2K8QX5BJD;
+				DEVELOPMENT_TEAM = C8JF9RQ56X;
 				INFOPLIST_FILE = FourSqaureSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
