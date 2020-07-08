@@ -46,6 +46,7 @@
 		A3B0E18024B566D400A8881C /* NoDataFoundCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B0E17E24B566D400A8881C /* NoDataFoundCollectionViewCell.swift */; };
 		A3B0E18124B566D400A8881C /* NoDataFoundCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3B0E17F24B566D400A8881C /* NoDataFoundCollectionViewCell.xib */; };
 		A3B0E18524B567B000A8881C /* NoDataFound.png in Resources */ = {isa = PBXBuildFile; fileRef = A3B0E18424B567B000A8881C /* NoDataFound.png */; };
+		A3B0E18724B56DF400A8881C /* NoDataFound!.png in Resources */ = {isa = PBXBuildFile; fileRef = A3B0E18624B56DF300A8881C /* NoDataFound!.png */; };
 		C6F743A3C7838DE89B69B7CB /* Pods_FourSqaureSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5515DA2A530EBECDFB76215E /* Pods_FourSqaureSample.framework */; };
 /* End PBXBuildFile section */
 
@@ -93,6 +94,7 @@
 		A3B0E17E24B566D400A8881C /* NoDataFoundCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoDataFoundCollectionViewCell.swift; sourceTree = "<group>"; };
 		A3B0E17F24B566D400A8881C /* NoDataFoundCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoDataFoundCollectionViewCell.xib; sourceTree = "<group>"; };
 		A3B0E18424B567B000A8881C /* NoDataFound.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NoDataFound.png; sourceTree = "<group>"; };
+		A3B0E18624B56DF300A8881C /* NoDataFound!.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NoDataFound!.png"; sourceTree = "<group>"; };
 		D038568465554AFC92C86C37 /* Pods-FourSqaureSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FourSqaureSample.debug.xcconfig"; path = "Target Support Files/Pods-FourSqaureSample/Pods-FourSqaureSample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -145,6 +147,7 @@
 				A3B0E14E24B53FE100A8881C /* shell */,
 				A318AEBA24B53C6E0062697F /* AppDelegate.swift */,
 				A318AEC024B53C6E0062697F /* Main.storyboard */,
+				A3B0E18624B56DF300A8881C /* NoDataFound!.png */,
 				A3B0E17C24B5662F00A8881C /* placeholder.png */,
 				A3B0E18424B567B000A8881C /* NoDataFound.png */,
 				A318AEC324B53C6E0062697F /* Assets.xcassets */,
@@ -345,6 +348,7 @@
 				A3B0E17D24B5662F00A8881C /* placeholder.png in Resources */,
 				A318AEC224B53C6E0062697F /* Main.storyboard in Resources */,
 				A3B0E18524B567B000A8881C /* NoDataFound.png in Resources */,
+				A3B0E18724B56DF400A8881C /* NoDataFound!.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -576,7 +580,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C8JF9RQ56X;
 				INFOPLIST_FILE = FourSqaureSample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -596,7 +600,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C8JF9RQ56X;
 				INFOPLIST_FILE = FourSqaureSample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
