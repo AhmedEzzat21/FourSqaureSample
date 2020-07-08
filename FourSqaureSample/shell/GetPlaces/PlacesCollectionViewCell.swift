@@ -31,8 +31,8 @@ class PlacesCollectionViewCell: UICollectionViewCell {
                    
                else{
                    
-                   img.image = #imageLiteral(resourceName: "Starbucks.jpg")
-                   img.contentMode = .scaleAspectFit
+                   img.image = #imageLiteral(resourceName: "placeholder.png")
+                   img.contentMode = .scaleToFill
                    
                }
   

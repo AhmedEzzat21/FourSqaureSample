@@ -145,7 +145,7 @@ class AlamofireService: EndpointExecuter {
     private func concatenateHeaders(for endpoint: Endpoint) -> [String: String] {
         var headers = endpoint.headers.filter{$0.value != ""}
         headers.updateValue("application/json", forKey: "Content-Type")
-      
+      headers.updateValue("application/json", forKey: "Accept")
         for (key, value) in endpoint.auth.tokenHeader {
             print("😂😂😂😂😂😂Header\(value)")
             headers.updateValue(value, forKey: key)

@@ -21,9 +21,7 @@ class GetPlacesView: BaseView<GetPlacesPresenter, BaseItem> ,CLLocationManagerDe
     
     override func bindind() {
         presenter = GetPlacesPresenter(router: RouterManager(self), userRepo: UserRepoImpl())
-//        presenter.delegate = item.countryDelegate
-//        presenter.userCountry.value = item.userCountry
-        // Ask for Authorisation from the User.
+
             self.locationManager.requestAlwaysAuthorization()
             
             // For use in foreground
@@ -35,7 +33,8 @@ class GetPlacesView: BaseView<GetPlacesPresenter, BaseItem> ,CLLocationManagerDe
                 locationManager.startUpdatingLocation()
             }
        
-       
+       self.placesCollection.reloadData()
+
       
     }
   func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -54,11 +53,11 @@ class GetPlacesView: BaseView<GetPlacesPresenter, BaseItem> ,CLLocationManagerDe
     func updatLocation(){
            
            
-           presenter.places.bind { _ in
-                      self.placesCollection.reloadData()
-                  }
+        
             presenter.getPlaces(lat: currentLocation!.latitude, lng: currentLocation!.longitude)
-          
+          presenter.places.bind { _ in
+                             self.placesCollection.reloadData()
+                         }
            firstLanche = false
            
            
@@ -74,6 +73,7 @@ extension GetPlacesView: UICollectionViewDataSource, UICollectionViewDelegate, U
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = (collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: PlacesCollectionViewCell.self), for: indexPath))  as! PlacesCollectionViewCell
         cell.configure(result: presenter.places.value[indexPath.row], index: indexPath.row)
+        
         return cell
         
     }
@@ -81,7 +81,7 @@ extension GetPlacesView: UICollectionViewDataSource, UICollectionViewDelegate, U
  
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize( width: (collectionView.frame.width), height: 100 )
+        return CGSize( width: (collectionView.frame.width), height: 120 )
     }
     
 }

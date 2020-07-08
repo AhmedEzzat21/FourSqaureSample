@@ -17,7 +17,10 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="State" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="shw-Q2-Cfg">
-                        <rect key="frame" x="83" y="58.5" width="289" height="10.5"/>
+                        <rect key="frame" x="83" y="58.5" width="326" height="10.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="326" id="eID-QC-Ajh"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
@@ -55,7 +58,7 @@
             <constraints>
                 <constraint firstItem="mcY-5o-cDa" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="27" id="1ex-Nk-zpb"/>
                 <constraint firstItem="5Be-VP-lEa" firstAttribute="leading" secondItem="5qo-oe-z4d" secondAttribute="trailing" constant="16" id="BTI-iw-Xw8"/>
-                <constraint firstAttribute="trailing" secondItem="shw-Q2-Cfg" secondAttribute="trailing" constant="37" id="ItY-0n-hwa"/>
+                <constraint firstAttribute="trailing" secondItem="shw-Q2-Cfg" secondAttribute="trailing" id="ItY-0n-hwa"/>
                 <constraint firstItem="shw-Q2-Cfg" firstAttribute="top" secondItem="5Be-VP-lEa" secondAttribute="bottom" constant="12" id="JC1-93-W6X"/>
                 <constraint firstAttribute="trailing" secondItem="5Be-VP-lEa" secondAttribute="trailing" constant="20" id="Ss8-i6-dKa"/>
                 <constraint firstItem="shw-Q2-Cfg" firstAttribute="top" secondItem="5qo-oe-z4d" secondAttribute="bottom" constant="5.5" id="Ydd-iR-En2"/>

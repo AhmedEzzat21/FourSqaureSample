@@ -42,6 +42,7 @@
 		A3B0E17524B550D500A8881C /* GetPlacesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B0E17424B550D500A8881C /* GetPlacesView.swift */; };
 		A3B0E17824B5590700A8881C /* PlacesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B0E17624B5590700A8881C /* PlacesCollectionViewCell.swift */; };
 		A3B0E17924B5590700A8881C /* PlacesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3B0E17724B5590700A8881C /* PlacesCollectionViewCell.xib */; };
+		A3B0E17D24B5662F00A8881C /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = A3B0E17C24B5662F00A8881C /* placeholder.png */; };
 		C6F743A3C7838DE89B69B7CB /* Pods_FourSqaureSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5515DA2A530EBECDFB76215E /* Pods_FourSqaureSample.framework */; };
 /* End PBXBuildFile section */
 
@@ -85,6 +86,7 @@
 		A3B0E17424B550D500A8881C /* GetPlacesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPlacesView.swift; sourceTree = "<group>"; };
 		A3B0E17624B5590700A8881C /* PlacesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesCollectionViewCell.swift; sourceTree = "<group>"; };
 		A3B0E17724B5590700A8881C /* PlacesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlacesCollectionViewCell.xib; sourceTree = "<group>"; };
+		A3B0E17C24B5662F00A8881C /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
 		D038568465554AFC92C86C37 /* Pods-FourSqaureSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FourSqaureSample.debug.xcconfig"; path = "Target Support Files/Pods-FourSqaureSample/Pods-FourSqaureSample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -137,6 +139,7 @@
 				A3B0E14E24B53FE100A8881C /* shell */,
 				A318AEBA24B53C6E0062697F /* AppDelegate.swift */,
 				A318AEC024B53C6E0062697F /* Main.storyboard */,
+				A3B0E17C24B5662F00A8881C /* placeholder.png */,
 				A318AEC324B53C6E0062697F /* Assets.xcassets */,
 				A318AEC524B53C6E0062697F /* LaunchScreen.storyboard */,
 				A318AEC824B53C6E0062697F /* Info.plist */,
@@ -329,6 +332,7 @@
 				A3B0E17924B5590700A8881C /* PlacesCollectionViewCell.xib in Resources */,
 				A318AEC724B53C6E0062697F /* LaunchScreen.storyboard in Resources */,
 				A318AEC424B53C6E0062697F /* Assets.xcassets in Resources */,
+				A3B0E17D24B5662F00A8881C /* placeholder.png in Resources */,
 				A318AEC224B53C6E0062697F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

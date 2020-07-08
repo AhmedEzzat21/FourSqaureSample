@@ -9,7 +9,7 @@
 import Foundation
 
 class GetPlaceEndPoint: Endpoint {
-    var service: EndpointService = .places
+    var service: EndpointService = .search
     
     var url: String = ""
     
@@ -23,7 +23,7 @@ class GetPlaceEndPoint: Endpoint {
     
     var headers: [String: String] = [:]
     init(lat: Double , lng : Double ) {
-        url += "search/recommendations?ll=\(lat),\(lng)&v=20190401&radius=300&intent=venues&client_id=\(NetworkConstant.client_id)&client_secret=\(NetworkConstant.client_secret)"
+        url += "/recommendations?ll=\(lat),\(lng)&v=20190401&radius=300&intent=venues&client_id=\(NetworkConstant.client_id)&client_secret=\(NetworkConstant.client_secret)"
          }
     
       

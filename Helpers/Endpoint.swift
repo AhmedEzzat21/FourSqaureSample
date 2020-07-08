@@ -32,7 +32,7 @@ enum EndpointMethod: String {
 }
 
 enum EndpointService {
-    case places
+    case search
   
     var url: String {
        
