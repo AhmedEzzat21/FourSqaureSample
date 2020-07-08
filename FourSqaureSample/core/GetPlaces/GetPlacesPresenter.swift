@@ -30,7 +30,7 @@ class GetPlacesPresenter:BasePresenter {
         
         
     }
-    func meetingDetails() {
+    func getPlaces() {
         showLoading()
         GetPlacesProcessor(userRepo: userRepo, lat: lat.value ?? 0.0, lng: lng.value ?? 0.0).execute()
             .then { (response) in

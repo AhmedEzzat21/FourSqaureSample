@@ -11,6 +11,7 @@ target 'FourSqaureSample' do
   pod 'SwiftyJSON', '~> 4.0'
   pod 'ReachabilitySwift', '~> 4.3.0'
   pod 'KeychainSwift', '~> 16.0'
+  pod 'Kingfisher'
 
   # Pods for FourSqaureSample
 

@@ -40,6 +40,8 @@
 		A3B0E17024B550AF00A8881C /* GetPlacesProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B0E16F24B550AF00A8881C /* GetPlacesProcessor.swift */; };
 		A3B0E17224B550C200A8881C /* GetPlacesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B0E17124B550C200A8881C /* GetPlacesPresenter.swift */; };
 		A3B0E17524B550D500A8881C /* GetPlacesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B0E17424B550D500A8881C /* GetPlacesView.swift */; };
+		A3B0E17824B5590700A8881C /* PlacesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B0E17624B5590700A8881C /* PlacesCollectionViewCell.swift */; };
+		A3B0E17924B5590700A8881C /* PlacesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3B0E17724B5590700A8881C /* PlacesCollectionViewCell.xib */; };
 		C6F743A3C7838DE89B69B7CB /* Pods_FourSqaureSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5515DA2A530EBECDFB76215E /* Pods_FourSqaureSample.framework */; };
 /* End PBXBuildFile section */
 
@@ -81,6 +83,8 @@
 		A3B0E16F24B550AF00A8881C /* GetPlacesProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPlacesProcessor.swift; sourceTree = "<group>"; };
 		A3B0E17124B550C200A8881C /* GetPlacesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPlacesPresenter.swift; sourceTree = "<group>"; };
 		A3B0E17424B550D500A8881C /* GetPlacesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPlacesView.swift; sourceTree = "<group>"; };
+		A3B0E17624B5590700A8881C /* PlacesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesCollectionViewCell.swift; sourceTree = "<group>"; };
+		A3B0E17724B5590700A8881C /* PlacesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlacesCollectionViewCell.xib; sourceTree = "<group>"; };
 		D038568465554AFC92C86C37 /* Pods-FourSqaureSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FourSqaureSample.debug.xcconfig"; path = "Target Support Files/Pods-FourSqaureSample/Pods-FourSqaureSample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -248,6 +252,8 @@
 			isa = PBXGroup;
 			children = (
 				A3B0E17424B550D500A8881C /* GetPlacesView.swift */,
+				A3B0E17624B5590700A8881C /* PlacesCollectionViewCell.swift */,
+				A3B0E17724B5590700A8881C /* PlacesCollectionViewCell.xib */,
 			);
 			path = GetPlaces;
 			sourceTree = "<group>";
@@ -320,6 +326,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3B0E17924B5590700A8881C /* PlacesCollectionViewCell.xib in Resources */,
 				A318AEC724B53C6E0062697F /* LaunchScreen.storyboard in Resources */,
 				A318AEC424B53C6E0062697F /* Assets.xcassets in Resources */,
 				A318AEC224B53C6E0062697F /* Main.storyboard in Resources */,
@@ -404,6 +411,7 @@
 				A3B0E16524B54C3400A8881C /* ErrorHandling.swift in Sources */,
 				A3B0E13B24B53E6300A8881C /* BaseView.swift in Sources */,
 				A3B0E15E24B54A9500A8881C /* UserRepoImpl.swift in Sources */,
+				A3B0E17824B5590700A8881C /* PlacesCollectionViewCell.swift in Sources */,
 				A3B0E17024B550AF00A8881C /* GetPlacesProcessor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
