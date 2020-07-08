@@ -10,20 +10,28 @@ import Foundation
 
 extension Date {
     init(serverDateUTC: String) {
-        self = Formatter.iso8601.date(from: serverDateUTC) ?? Date()
-    }
-    
-    var uiFormatted: String {
-        return Formatter.uiFormatter.string(from: self)
-    }
-    func getCurrentMinute() ->Int {
-        let date = Date()
-       let calendar = Calendar.current
-        let hour = calendar.component(.hour, from: date)
-        let minutes = calendar.component(.minute, from: date)
-        return minutes
-    }
+           self = Formatter.iso8601.date(from: serverDateUTC) ?? Date()
+       }
+       
+       var uiFormatted: String {
+           return Formatter.uiFormatter.string(from: self)
+       }
+       func getCurrentMinute() ->Int {
+           let date = Date()
+          let calendar = Calendar.current
+           let hour = calendar.component(.hour, from: date)
+           let minutes = calendar.component(.minute, from: date)
+           return minutes
+       }
+       func getCurrentSecond() ->Int {
+           let date = Date()
+          let calendar = Calendar.current
+           let hour = calendar.component(.hour, from: date)
+           let seconds = calendar.component(.second, from: date)
+           return seconds
+       }
 }
+
 
 extension Formatter {
     static let iso8601: DateFormatter = {

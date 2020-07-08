@@ -9,6 +9,8 @@ target 'FourSqaureSample' do
   pod 'Bond', '~> 7.6.0'
   pod 'Alamofire', '~> 4.7.3'
   pod 'SwiftyJSON', '~> 4.0'
+  pod 'ReachabilitySwift', '~> 4.3.0'
+  pod 'KeychainSwift', '~> 16.0'
 
   # Pods for FourSqaureSample
 

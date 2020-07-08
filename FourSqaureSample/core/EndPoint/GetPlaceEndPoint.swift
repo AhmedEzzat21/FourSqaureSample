@@ -22,8 +22,9 @@ class ShowPlacesEndPoint: Endpoint {
     var encoding: EndpointEncoding = .query
     
     var headers: [String: String] = [:]
-    init(meetingID: Int) {
-          url += "/\(meetingID))"
+    init(lat: Double , lng : Double ) {
+        url += "search/recommendations?ll=\(lat),\(lng)&v=20190401&radius=300&intent=venues&client_id=\(NetworkConstant.client_id)&client_secret=\(NetworkConstant.client_secret)"
          }
+    
       
 }
