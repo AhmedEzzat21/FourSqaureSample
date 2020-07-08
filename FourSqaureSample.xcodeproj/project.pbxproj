@@ -35,6 +35,11 @@
 		A3B0E16524B54C3400A8881C /* ErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B0E16424B54C3400A8881C /* ErrorHandling.swift */; };
 		A3B0E16724B54CED00A8881C /* MultiPartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B0E16624B54CED00A8881C /* MultiPartModel.swift */; };
 		A3B0E16924B54D9500A8881C /* RouterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B0E16824B54D9500A8881C /* RouterController.swift */; };
+		A3B0E16B24B54EEF00A8881C /* LocalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B0E16A24B54EEF00A8881C /* LocalData.swift */; };
+		A3B0E16D24B54F3100A8881C /* LocalDataImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B0E16C24B54F3100A8881C /* LocalDataImpl.swift */; };
+		A3B0E17024B550AF00A8881C /* GetPlacesProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B0E16F24B550AF00A8881C /* GetPlacesProcessor.swift */; };
+		A3B0E17224B550C200A8881C /* GetPlacesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B0E17124B550C200A8881C /* GetPlacesPresenter.swift */; };
+		A3B0E17524B550D500A8881C /* GetPlacesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B0E17424B550D500A8881C /* GetPlacesView.swift */; };
 		C6F743A3C7838DE89B69B7CB /* Pods_FourSqaureSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5515DA2A530EBECDFB76215E /* Pods_FourSqaureSample.framework */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +76,11 @@
 		A3B0E16424B54C3400A8881C /* ErrorHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandling.swift; sourceTree = "<group>"; };
 		A3B0E16624B54CED00A8881C /* MultiPartModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiPartModel.swift; sourceTree = "<group>"; };
 		A3B0E16824B54D9500A8881C /* RouterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterController.swift; sourceTree = "<group>"; };
+		A3B0E16A24B54EEF00A8881C /* LocalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalData.swift; sourceTree = "<group>"; };
+		A3B0E16C24B54F3100A8881C /* LocalDataImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataImpl.swift; sourceTree = "<group>"; };
+		A3B0E16F24B550AF00A8881C /* GetPlacesProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPlacesProcessor.swift; sourceTree = "<group>"; };
+		A3B0E17124B550C200A8881C /* GetPlacesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPlacesPresenter.swift; sourceTree = "<group>"; };
+		A3B0E17424B550D500A8881C /* GetPlacesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPlacesView.swift; sourceTree = "<group>"; };
 		D038568465554AFC92C86C37 /* Pods-FourSqaureSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FourSqaureSample.debug.xcconfig"; path = "Target Support Files/Pods-FourSqaureSample/Pods-FourSqaureSample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -164,6 +174,7 @@
 		A3B0E14D24B53FD700A8881C /* core */ = {
 			isa = PBXGroup;
 			children = (
+				A3B0E16E24B5509900A8881C /* GetPlaces */,
 				A3B0E15424B5442B00A8881C /* EndPoint */,
 				A3B0E14F24B5415300A8881C /* Model */,
 				A3B0E15924B54A0E00A8881C /* Repo */,
@@ -174,6 +185,7 @@
 		A3B0E14E24B53FE100A8881C /* shell */ = {
 			isa = PBXGroup;
 			children = (
+				A3B0E17324B550C900A8881C /* GetPlaces */,
 				A3B0E15A24B54A2000A8881C /* Repo */,
 			);
 			path = shell;
@@ -217,8 +229,27 @@
 			children = (
 				A3B0E15F24B54B1700A8881C /* NetworkServiceImpl.swift */,
 				A3B0E16224B54B8A00A8881C /* AlamofireService.swift */,
+				A3B0E16A24B54EEF00A8881C /* LocalData.swift */,
+				A3B0E16C24B54F3100A8881C /* LocalDataImpl.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		A3B0E16E24B5509900A8881C /* GetPlaces */ = {
+			isa = PBXGroup;
+			children = (
+				A3B0E16F24B550AF00A8881C /* GetPlacesProcessor.swift */,
+				A3B0E17124B550C200A8881C /* GetPlacesPresenter.swift */,
+			);
+			path = GetPlaces;
+			sourceTree = "<group>";
+		};
+		A3B0E17324B550C900A8881C /* GetPlaces */ = {
+			isa = PBXGroup;
+			children = (
+				A3B0E17424B550D500A8881C /* GetPlacesView.swift */,
+			);
+			path = GetPlaces;
 			sourceTree = "<group>";
 		};
 		FE9D312581EEA4C7AAC53134 /* Frameworks */ = {
@@ -357,10 +388,14 @@
 				A3B0E15824B544BA00A8881C /* NoneAuthorizationHandler.swift in Sources */,
 				A318AEBB24B53C6E0062697F /* AppDelegate.swift in Sources */,
 				A3B0E14624B53F0D00A8881C /* Date+Helpers.swift in Sources */,
+				A3B0E16B24B54EEF00A8881C /* LocalData.swift in Sources */,
 				A3B0E15324B5422600A8881C /* NetworkConstant.swift in Sources */,
 				A3B0E16724B54CED00A8881C /* MultiPartModel.swift in Sources */,
+				A3B0E17224B550C200A8881C /* GetPlacesPresenter.swift in Sources */,
 				A3B0E14824B53F1F00A8881C /* Codable+Helpers.swift in Sources */,
 				A3B0E14C24B53F4800A8881C /* Endpoint.swift in Sources */,
+				A3B0E17524B550D500A8881C /* GetPlacesView.swift in Sources */,
+				A3B0E16D24B54F3100A8881C /* LocalDataImpl.swift in Sources */,
 				A3B0E13724B53E3800A8881C /* BaseValidator.swift in Sources */,
 				A3B0E13324B53E0700A8881C /* BaseItem.swift in Sources */,
 				A3B0E14424B53EF400A8881C /* Dynamic.swift in Sources */,
@@ -369,6 +404,7 @@
 				A3B0E16524B54C3400A8881C /* ErrorHandling.swift in Sources */,
 				A3B0E13B24B53E6300A8881C /* BaseView.swift in Sources */,
 				A3B0E15E24B54A9500A8881C /* UserRepoImpl.swift in Sources */,
+				A3B0E17024B550AF00A8881C /* GetPlacesProcessor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,7 +8,7 @@
 
 import Foundation
 
-class ShowPlacesEndPoint: Endpoint {
+class GetPlaceEndPoint: Endpoint {
     var service: EndpointService = .places
     
     var url: String = ""
