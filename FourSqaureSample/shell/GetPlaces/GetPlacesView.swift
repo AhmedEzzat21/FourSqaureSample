@@ -16,6 +16,9 @@ class GetPlacesView: BaseView<GetPlacesPresenter, BaseItem> ,CLLocationManagerDe
     @IBOutlet weak var placesCollection: UICollectionView! {
         didSet {
             self.placesCollection.register(UINib(nibName: String(describing: PlacesCollectionViewCell.self), bundle: nil), forCellWithReuseIdentifier: String(describing: PlacesCollectionViewCell.self))
+            
+             self.placesCollection.register(UINib(nibName: String(describing: NoDataFoundCollectionViewCell.self), bundle: nil), forCellWithReuseIdentifier: String(describing: NoDataFoundCollectionViewCell.self))
+            //NoDataFoundCollectionViewCell
         }
     }
     
@@ -67,21 +70,42 @@ class GetPlacesView: BaseView<GetPlacesPresenter, BaseItem> ,CLLocationManagerDe
 }
 extension GetPlacesView: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return presenter.places.value.count
+        if presenter.places.value.isEmpty {
+              return 1
+        }
+        else{
+            
+           return presenter.places.value.count
+        }
+      
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = (collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: PlacesCollectionViewCell.self), for: indexPath))  as! PlacesCollectionViewCell
-        cell.configure(result: presenter.places.value[indexPath.row], index: indexPath.row)
+        if presenter.places.value.isEmpty {
+            let cell = (collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: NoDataFoundCollectionViewCell.self), for: indexPath))  as! NoDataFoundCollectionViewCell
+                       
+              return cell
+        }else {
+            let cell = (collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: PlacesCollectionViewCell.self), for: indexPath))  as! PlacesCollectionViewCell
+            cell.configure(result: presenter.places.value[indexPath.row], index: indexPath.row)
+              return cell
+        }
         
-        return cell
+        
+//        return UICollectionViewCell()
         
     }
     
  
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize( width: (collectionView.frame.width), height: 120 )
+        if  presenter.places.value.isEmpty {
+             return CGSize( width: (collectionView.frame.width), height:collectionView.frame.height )
+        }
+        else {
+             return CGSize( width: (collectionView.frame.width), height: 120 )
+        }
+       
     }
     
 }
