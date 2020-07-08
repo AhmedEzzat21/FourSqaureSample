@@ -34,6 +34,12 @@ class GetPlacesView: BaseView<GetPlacesPresenter, BaseItem> ,CLLocationManagerDe
                 locationManager.delegate = self
                 locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
                 locationManager.startUpdatingLocation()
+                
+                locationManager.distanceFilter = 500 // distance changes you want to be informed about (in meters)
+                locationManager.desiredAccuracy = 100 // biggest approximation you tolerate (in meters)
+                locationManager.activityType = .automotiveNavigation // .automotiveNavigation will stop the updates when the device is not moving
+
+
             }
        
        self.placesCollection.reloadData()
@@ -67,6 +73,7 @@ class GetPlacesView: BaseView<GetPlacesPresenter, BaseItem> ,CLLocationManagerDe
            
            
        }
+    
 }
 extension GetPlacesView: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -91,9 +98,7 @@ extension GetPlacesView: UICollectionViewDataSource, UICollectionViewDelegate, U
               return cell
         }
         
-        
-//        return UICollectionViewCell()
-        
+            
     }
     
  
