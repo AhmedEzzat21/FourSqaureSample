@@ -7,9 +7,12 @@
 //
 
 import UIKit
+import CoreLocation
 
-class GetPlacesView: BaseView<GetPlacesPresenter, BaseItem> {
-    
+class GetPlacesView: BaseView<GetPlacesPresenter, BaseItem> ,CLLocationManagerDelegate{
+    var firstLanche = true
+    var currentLocation:CLLocationCoordinate2D?
+    let locationManager = CLLocationManager()
     @IBOutlet weak var placesCollection: UICollectionView! {
         didSet {
             self.placesCollection.register(UINib(nibName: String(describing: PlacesCollectionViewCell.self), bundle: nil), forCellWithReuseIdentifier: String(describing: PlacesCollectionViewCell.self))
@@ -20,14 +23,48 @@ class GetPlacesView: BaseView<GetPlacesPresenter, BaseItem> {
         presenter = GetPlacesPresenter(router: RouterManager(self), userRepo: UserRepoImpl())
 //        presenter.delegate = item.countryDelegate
 //        presenter.userCountry.value = item.userCountry
-        presenter.places.bind { _ in
-            self.placesCollection.reloadData()
-        }
-        presenter.getPlaces()
+        // Ask for Authorisation from the User.
+            self.locationManager.requestAlwaysAuthorization()
+            
+            // For use in foreground
+            self.locationManager.requestWhenInUseAuthorization()
+            
+            if CLLocationManager.locationServicesEnabled() {
+                locationManager.delegate = self
+                locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+                locationManager.startUpdatingLocation()
+            }
+       
        
       
     }
-  
+  func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+      
+      
+      guard let locValue: CLLocationCoordinate2D = manager.location?.coordinate else { return }
+      self.currentLocation = locValue
+      
+      if firstLanche{
+          updatLocation()
+      }
+      
+      
+      
+  }
+    func updatLocation(){
+           
+           
+           presenter.places.bind { _ in
+                      self.placesCollection.reloadData()
+                  }
+            presenter.getPlaces(lat: currentLocation!.latitude, lng: currentLocation!.longitude)
+          
+           firstLanche = false
+           
+           
+           
+           
+       }
 }
 extension GetPlacesView: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -44,7 +81,7 @@ extension GetPlacesView: UICollectionViewDataSource, UICollectionViewDelegate, U
  
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize( width: (collectionView.frame.width), height: 36 )
+        return CGSize( width: (collectionView.frame.width), height: 100 )
     }
     
 }

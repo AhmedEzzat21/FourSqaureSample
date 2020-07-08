@@ -8,6 +8,8 @@
 
 import Foundation
 import Bond
+import CoreLocation
+
 class GetPlacesPresenter:BasePresenter {
     
     var router: RouterManagerProtocol
@@ -16,6 +18,7 @@ class GetPlacesPresenter:BasePresenter {
     var lat: Observable<Double?> = Observable(0.0)
     var lng: Observable<Double?> = Observable(0.0)
     var places: Dynamic<[Result]> = Dynamic([])
+    var currentLocation:CLLocationCoordinate2D?
 
     init(router: RouterManagerProtocol, userRepo: UserRepo ) {
         self.router = router
@@ -30,9 +33,10 @@ class GetPlacesPresenter:BasePresenter {
         
         
     }
-    func getPlaces() {
+    
+    func getPlaces(lat : Double , lng : Double) {
         showLoading()
-        GetPlacesProcessor(userRepo: userRepo, lat: lat.value ?? 0.0, lng: lng.value ?? 0.0).execute()
+        GetPlacesProcessor(userRepo: userRepo, lat: lat, lng: lng).execute()
             .then { (response) in
                 
                 self.hideLoading()
