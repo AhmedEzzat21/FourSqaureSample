@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		A318AEBB24B53C6E0062697F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A318AEBA24B53C6E0062697F /* AppDelegate.swift */; };
 		A318AEBD24B53C6E0062697F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A318AEBC24B53C6E0062697F /* SceneDelegate.swift */; };
-		A318AEBF24B53C6E0062697F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A318AEBE24B53C6E0062697F /* ViewController.swift */; };
 		A318AEC224B53C6E0062697F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A318AEC024B53C6E0062697F /* Main.storyboard */; };
 		A318AEC424B53C6E0062697F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A318AEC324B53C6E0062697F /* Assets.xcassets */; };
 		A318AEC724B53C6E0062697F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A318AEC524B53C6E0062697F /* LaunchScreen.storyboard */; };
@@ -26,6 +25,10 @@
 		A3B0E14824B53F1F00A8881C /* Codable+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B0E14724B53F1F00A8881C /* Codable+Helpers.swift */; };
 		A3B0E14A24B53F3100A8881C /* AuthorizationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B0E14924B53F3100A8881C /* AuthorizationHandler.swift */; };
 		A3B0E14C24B53F4800A8881C /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B0E14B24B53F4800A8881C /* Endpoint.swift */; };
+		A3B0E15124B5416400A8881C /* GetPlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B0E15024B5416400A8881C /* GetPlaceModel.swift */; };
+		A3B0E15324B5422600A8881C /* NetworkConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B0E15224B5422600A8881C /* NetworkConstant.swift */; };
+		A3B0E15624B5444200A8881C /* GetPlaceEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B0E15524B5444200A8881C /* GetPlaceEndPoint.swift */; };
+		A3B0E15824B544BA00A8881C /* NoneAuthorizationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B0E15724B544BA00A8881C /* NoneAuthorizationHandler.swift */; };
 		C6F743A3C7838DE89B69B7CB /* Pods_FourSqaureSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5515DA2A530EBECDFB76215E /* Pods_FourSqaureSample.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,7 +38,6 @@
 		A318AEB724B53C6E0062697F /* FourSqaureSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FourSqaureSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A318AEBA24B53C6E0062697F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A318AEBC24B53C6E0062697F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A318AEBE24B53C6E0062697F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A318AEC124B53C6E0062697F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A318AEC324B53C6E0062697F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A318AEC624B53C6E0062697F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,6 +55,10 @@
 		A3B0E14724B53F1F00A8881C /* Codable+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Codable+Helpers.swift"; sourceTree = "<group>"; };
 		A3B0E14924B53F3100A8881C /* AuthorizationHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationHandler.swift; sourceTree = "<group>"; };
 		A3B0E14B24B53F4800A8881C /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		A3B0E15024B5416400A8881C /* GetPlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPlaceModel.swift; sourceTree = "<group>"; };
+		A3B0E15224B5422600A8881C /* NetworkConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstant.swift; sourceTree = "<group>"; };
+		A3B0E15524B5444200A8881C /* GetPlaceEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPlaceEndPoint.swift; sourceTree = "<group>"; };
+		A3B0E15724B544BA00A8881C /* NoneAuthorizationHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoneAuthorizationHandler.swift; sourceTree = "<group>"; };
 		D038568465554AFC92C86C37 /* Pods-FourSqaureSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FourSqaureSample.debug.xcconfig"; path = "Target Support Files/Pods-FourSqaureSample/Pods-FourSqaureSample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,9 +106,10 @@
 		A318AEB924B53C6E0062697F /* FourSqaureSample */ = {
 			isa = PBXGroup;
 			children = (
+				A3B0E14D24B53FD700A8881C /* core */,
+				A3B0E14E24B53FE100A8881C /* shell */,
 				A318AEBA24B53C6E0062697F /* AppDelegate.swift */,
 				A318AEBC24B53C6E0062697F /* SceneDelegate.swift */,
-				A318AEBE24B53C6E0062697F /* ViewController.swift */,
 				A318AEC024B53C6E0062697F /* Main.storyboard */,
 				A318AEC324B53C6E0062697F /* Assets.xcassets */,
 				A318AEC524B53C6E0062697F /* LaunchScreen.storyboard */,
@@ -120,6 +127,7 @@
 				A3B0E13824B53E5100A8881C /* BasePresenter.swift */,
 				A3B0E13A24B53E6300A8881C /* BaseView.swift */,
 				A3B0E13C24B53E9100A8881C /* NetworkProcessor.swift */,
+				A3B0E15724B544BA00A8881C /* NoneAuthorizationHandler.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -134,8 +142,41 @@
 				A3B0E14724B53F1F00A8881C /* Codable+Helpers.swift */,
 				A3B0E14924B53F3100A8881C /* AuthorizationHandler.swift */,
 				A3B0E14B24B53F4800A8881C /* Endpoint.swift */,
+				A3B0E15224B5422600A8881C /* NetworkConstant.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		A3B0E14D24B53FD700A8881C /* core */ = {
+			isa = PBXGroup;
+			children = (
+				A3B0E15424B5442B00A8881C /* EndPoint */,
+				A3B0E14F24B5415300A8881C /* Model */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+		A3B0E14E24B53FE100A8881C /* shell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = shell;
+			sourceTree = "<group>";
+		};
+		A3B0E14F24B5415300A8881C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A3B0E15024B5416400A8881C /* GetPlaceModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A3B0E15424B5442B00A8881C /* EndPoint */ = {
+			isa = PBXGroup;
+			children = (
+				A3B0E15524B5444200A8881C /* GetPlaceEndPoint.swift */,
+			);
+			path = EndPoint;
 			sourceTree = "<group>";
 		};
 		FE9D312581EEA4C7AAC53134 /* Frameworks */ = {
@@ -263,13 +304,16 @@
 			files = (
 				A3B0E14224B53EDF00A8881C /* NetworkService.swift in Sources */,
 				A3B0E13D24B53E9100A8881C /* NetworkProcessor.swift in Sources */,
-				A318AEBF24B53C6E0062697F /* ViewController.swift in Sources */,
 				A3B0E14024B53ECE00A8881C /* String.swift in Sources */,
+				A3B0E15624B5444200A8881C /* GetPlaceEndPoint.swift in Sources */,
 				A3B0E13924B53E5100A8881C /* BasePresenter.swift in Sources */,
+				A3B0E15124B5416400A8881C /* GetPlaceModel.swift in Sources */,
 				A3B0E14A24B53F3100A8881C /* AuthorizationHandler.swift in Sources */,
+				A3B0E15824B544BA00A8881C /* NoneAuthorizationHandler.swift in Sources */,
 				A318AEBB24B53C6E0062697F /* AppDelegate.swift in Sources */,
 				A3B0E14624B53F0D00A8881C /* Date+Helpers.swift in Sources */,
 				A318AEBD24B53C6E0062697F /* SceneDelegate.swift in Sources */,
+				A3B0E15324B5422600A8881C /* NetworkConstant.swift in Sources */,
 				A3B0E14824B53F1F00A8881C /* Codable+Helpers.swift in Sources */,
 				A3B0E14C24B53F4800A8881C /* Endpoint.swift in Sources */,
 				A3B0E13724B53E3800A8881C /* BaseValidator.swift in Sources */,

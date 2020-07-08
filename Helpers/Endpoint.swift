@@ -32,21 +32,11 @@ enum EndpointMethod: String {
 }
 
 enum EndpointService {
-    case auth
-    case countries
-    case home
-    case meetings
-    case follow_ups
-    case ocrConnection
-    case connections
-    case users
-    case user
-    
+    case places
+  
     var url: String {
-        if self == .home || self == .ocrConnection {
-            return "https://arborapp.io"
-        }
-        return "https://arborapp.io/\(self)"
+       
+        return "https://api.foursquare.com/v2/\(self)"
     }
     
 }
