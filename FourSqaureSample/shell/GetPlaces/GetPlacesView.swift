@@ -11,6 +11,8 @@ import CoreLocation
 
 class GetPlacesView: BaseView<GetPlacesPresenter, BaseItem> ,CLLocationManagerDelegate{
     var firstLanche = true
+    var isRealTime = true
+
     var currentLocation:CLLocationCoordinate2D?
     let locationManager = CLLocationManager()
     @IBOutlet weak var placesCollection: UICollectionView! {
@@ -49,13 +51,22 @@ class GetPlacesView: BaseView<GetPlacesPresenter, BaseItem> ,CLLocationManagerDe
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController!.isNavigationBarHidden = false
         
-        let rightBtn : UIBarButtonItem = UIBarButtonItem(title: "Real time", style: .plain, target: self, action: #selector(onClickMethod))
+        let rightBtn : UIBarButtonItem = UIBarButtonItem(title: "Realtime", style: .plain, target: self, action: #selector(onClickMethod))
         
         self.navigationItem.rightBarButtonItem = rightBtn
         
     }
     @objc func onClickMethod() {
         print("right bar button item")
+        if isRealTime {
+            self.navigationItem.rightBarButtonItem?.title = "Single Update"
+
+              } else {
+            self.navigationItem.rightBarButtonItem?.title = "Realtime"
+
+                 
+              }
+              isRealTime = !isRealTime
     }
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         
