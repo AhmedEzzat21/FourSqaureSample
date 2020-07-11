@@ -23,7 +23,7 @@ class GetPlaceEndPoint: Endpoint {
     
     var headers: [String: String] = [:]
     init(lat: Double , lng : Double ) {
-        url += "/recommendations?ll=\(lat),\(lng)&v=20190401&radius=300&intent=venues&client_id=\(NetworkConstant.client_id)&client_secret=\(NetworkConstant.client_secret)"
+        url += "/recommendations?ll=\(lat),\(lng)&v=20190401&radius=300&intent=venues&client_id=\(Constants.client_id)&client_secret=\(Constants.client_secret)"
          }
     
       

@@ -53,13 +53,13 @@ class GetPlacesView: BaseView<GetPlacesPresenter, BaseItem> ,CLLocationManagerDe
         
         if let typeRawValue = UserDefaults.standard.object(forKey: Constants.DefaultLocationMode) as? Int ,
             let type = LocationMode.init(type: typeRawValue) {
-            var navButtonTitle : String = type.title
             typeMode = type
-            let rightBtn : UIBarButtonItem = UIBarButtonItem(title:navButtonTitle , style: .plain, target: self, action: #selector(onClickMethod(nabButton:)))
+            let rightBtn : UIBarButtonItem = UIBarButtonItem(title:type.title , style: .plain, target: self, action: #selector(onClickMethod(nabButton:)))
             
             self.navigationItem.rightBarButtonItem = rightBtn
             
         }
+        locationManager.startUpdatingLocation()
         
         
     }
@@ -76,29 +76,31 @@ class GetPlacesView: BaseView<GetPlacesPresenter, BaseItem> ,CLLocationManagerDe
             UserDefaults.standard.set(LocationMode.realTime.rawValue, forKey: Constants.DefaultLocationMode)
             self.typeMode = .realTime
         }
+        locationManager.startUpdatingLocation()
     }
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         
         
         guard let locValue: CLLocationCoordinate2D = manager.location?.coordinate else { return }
-        self.currentLocation = locValue
         
-        if firstLanche{
-            updatLocation()
+        if typeMode == LocationMode.single {
+            manager.stopUpdatingLocation()
         }
+        
+        
+        updatLocation(currentLocation: locValue)
         
         
         
     }
-    func updatLocation(){
+    func updatLocation(currentLocation : CLLocationCoordinate2D){
         
         
         
-        presenter.getPlaces(lat: currentLocation!.latitude, lng: currentLocation!.longitude)
+        presenter.getPlaces(lat: currentLocation.latitude, lng: currentLocation.longitude)
         presenter.places.bind { _ in
             self.placesCollection.reloadData()
         }
-        firstLanche = false
         
         
         
