@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
- platform :ios, '10'
+ platform :ios, '9.3'
 
 target 'FourSqaureSample' do
   # Comment the next line if you don't want to use dynamic frameworks
@@ -11,7 +11,8 @@ target 'FourSqaureSample' do
   pod 'SwiftyJSON', '~> 4.0'
   pod 'ReachabilitySwift', '~> 4.3.0'
   pod 'KeychainSwift', '~> 16.0'
-  pod 'Kingfisher'
+#  pod 'Kingfisher'
+  pod 'moa'
 
   # Pods for FourSqaureSample
 
