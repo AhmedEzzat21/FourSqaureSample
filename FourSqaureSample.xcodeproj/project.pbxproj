@@ -47,6 +47,8 @@
 		A3B0E18124B566D400A8881C /* NoDataFoundCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3B0E17F24B566D400A8881C /* NoDataFoundCollectionViewCell.xib */; };
 		A3B0E18524B567B000A8881C /* NoDataFound.png in Resources */ = {isa = PBXBuildFile; fileRef = A3B0E18424B567B000A8881C /* NoDataFound.png */; };
 		A3B0E18724B56DF400A8881C /* NoDataFound!.png in Resources */ = {isa = PBXBuildFile; fileRef = A3B0E18624B56DF300A8881C /* NoDataFound!.png */; };
+		A3BC557B24B9D224007C572F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BC557A24B9D224007C572F /* Constants.swift */; };
+		A3BC557D24B9D3F0007C572F /* LocationMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BC557C24B9D3F0007C572F /* LocationMode.swift */; };
 		C6F743A3C7838DE89B69B7CB /* Pods_FourSqaureSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5515DA2A530EBECDFB76215E /* Pods_FourSqaureSample.framework */; };
 /* End PBXBuildFile section */
 
@@ -95,6 +97,8 @@
 		A3B0E17F24B566D400A8881C /* NoDataFoundCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoDataFoundCollectionViewCell.xib; sourceTree = "<group>"; };
 		A3B0E18424B567B000A8881C /* NoDataFound.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NoDataFound.png; sourceTree = "<group>"; };
 		A3B0E18624B56DF300A8881C /* NoDataFound!.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NoDataFound!.png"; sourceTree = "<group>"; };
+		A3BC557A24B9D224007C572F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A3BC557C24B9D3F0007C572F /* LocationMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMode.swift; sourceTree = "<group>"; };
 		D038568465554AFC92C86C37 /* Pods-FourSqaureSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FourSqaureSample.debug.xcconfig"; path = "Target Support Files/Pods-FourSqaureSample/Pods-FourSqaureSample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -202,6 +206,7 @@
 		A3B0E14E24B53FE100A8881C /* shell */ = {
 			isa = PBXGroup;
 			children = (
+				A3BC557924B9D202007C572F /* Constant */,
 				A3B0E17324B550C900A8881C /* GetPlaces */,
 				A3B0E15A24B54A2000A8881C /* Repo */,
 			);
@@ -213,6 +218,7 @@
 			children = (
 				A3B0E15024B5416400A8881C /* GetPlaceModel.swift */,
 				A3B0E16624B54CED00A8881C /* MultiPartModel.swift */,
+				A3BC557C24B9D3F0007C572F /* LocationMode.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -271,6 +277,14 @@
 				A3B0E17F24B566D400A8881C /* NoDataFoundCollectionViewCell.xib */,
 			);
 			path = GetPlaces;
+			sourceTree = "<group>";
+		};
+		A3BC557924B9D202007C572F /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				A3BC557A24B9D224007C572F /* Constants.swift */,
+			);
+			path = Constant;
 			sourceTree = "<group>";
 		};
 		FE9D312581EEA4C7AAC53134 /* Frameworks */ = {
@@ -409,6 +423,7 @@
 				A3B0E15624B5444200A8881C /* GetPlaceEndPoint.swift in Sources */,
 				A3B0E16924B54D9500A8881C /* RouterController.swift in Sources */,
 				A3B0E13924B53E5100A8881C /* BasePresenter.swift in Sources */,
+				A3BC557B24B9D224007C572F /* Constants.swift in Sources */,
 				A3B0E15124B5416400A8881C /* GetPlaceModel.swift in Sources */,
 				A3B0E14A24B53F3100A8881C /* AuthorizationHandler.swift in Sources */,
 				A3B0E15824B544BA00A8881C /* NoneAuthorizationHandler.swift in Sources */,
@@ -431,6 +446,7 @@
 				A3B0E16524B54C3400A8881C /* ErrorHandling.swift in Sources */,
 				A3B0E13B24B53E6300A8881C /* BaseView.swift in Sources */,
 				A3B0E15E24B54A9500A8881C /* UserRepoImpl.swift in Sources */,
+				A3BC557D24B9D3F0007C572F /* LocationMode.swift in Sources */,
 				A3B0E17824B5590700A8881C /* PlacesCollectionViewCell.swift in Sources */,
 				A3B0E17024B550AF00A8881C /* GetPlacesProcessor.swift in Sources */,
 			);

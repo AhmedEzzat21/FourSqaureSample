@@ -11,8 +11,8 @@ import CoreLocation
 
 class GetPlacesView: BaseView<GetPlacesPresenter, BaseItem> ,CLLocationManagerDelegate{
     var firstLanche = true
-    var isRealTime = true
-
+    var typeMode : LocationMode?
+    
     var currentLocation:CLLocationCoordinate2D?
     let locationManager = CLLocationManager()
     @IBOutlet weak var placesCollection: UICollectionView! {
@@ -45,28 +45,37 @@ class GetPlacesView: BaseView<GetPlacesPresenter, BaseItem> ,CLLocationManagerDe
         }
         
         self.placesCollection.reloadData()
-        
+        //    locationManager.startUpdatingLocation()
         
     }
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController!.isNavigationBarHidden = false
         
-        let rightBtn : UIBarButtonItem = UIBarButtonItem(title: "Realtime", style: .plain, target: self, action: #selector(onClickMethod))
+        if let typeRawValue = UserDefaults.standard.object(forKey: Constants.DefaultLocationMode) as? Int ,
+            let type = LocationMode.init(type: typeRawValue) {
+            var navButtonTitle : String = type.title
+            typeMode = type
+            let rightBtn : UIBarButtonItem = UIBarButtonItem(title:navButtonTitle , style: .plain, target: self, action: #selector(onClickMethod(nabButton:)))
+            
+            self.navigationItem.rightBarButtonItem = rightBtn
+            
+        }
         
-        self.navigationItem.rightBarButtonItem = rightBtn
         
     }
-    @objc func onClickMethod() {
+    @objc func onClickMethod(nabButton : UIBarButtonItem) {
         print("right bar button item")
-        if isRealTime {
+        guard  let typeMode = typeMode  else {return}
+        
+        if typeMode == LocationMode.realTime {
             self.navigationItem.rightBarButtonItem?.title = "Single Update"
-
-              } else {
+            UserDefaults.standard.set(LocationMode.single.rawValue, forKey: Constants.DefaultLocationMode)
+            self.typeMode = .single
+        } else {
             self.navigationItem.rightBarButtonItem?.title = "Realtime"
-
-                 
-              }
-              isRealTime = !isRealTime
+            UserDefaults.standard.set(LocationMode.realTime.rawValue, forKey: Constants.DefaultLocationMode)
+            self.typeMode = .realTime
+        }
     }
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         
